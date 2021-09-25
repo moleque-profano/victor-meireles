@@ -10,6 +10,7 @@ public class Calculadora {
     
     //menu inicial
     public void menu(){
+        new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
         System.out.println("*****************");
         System.out.println("***Calculadora***");
         System.out.println("*****************");
