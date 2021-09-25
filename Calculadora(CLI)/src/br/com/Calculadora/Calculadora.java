@@ -34,22 +34,22 @@ public class Calculadora {
         switch(n){
             case 1:
                 System.out.println("Escolheu Soma.");
-                int soma = pegarNum1()+pegarNum2();
+                double soma = pegarNum1()+pegarNum2();
                 System.out.println("O resultado da Soma: "+soma);
                 break;
             case 2:
                 System.out.println("Escolheu Subtração");
-                int sub = pegarNum1()-pegarNum2();
+                double sub = pegarNum1()-pegarNum2();
                 System.out.println("O resultado da Soma: "+sub);
                 break;
             case 3:
                 System.out.println("Escolheu Divisão");
-                int div = pegarNum1()/pegarNum2();
+                double div = pegarNum1()/pegarNum2();
                 System.out.println("O resultado da Soma: "+div);
                 break;
             case 4:
                 System.out.println("Escolheu Multiplicação");
-                int mult = pegarNum1()*pegarNum2();
+                double mult = pegarNum1()*pegarNum2();
                 System.out.println("O resultado da Soma: "+mult);
                 break;
             case 5:
@@ -64,19 +64,19 @@ public class Calculadora {
     
     
     //pega o primeiro número que vai operar
-    public Integer pegarNum1(){
+    public double pegarNum1(){
         System.out.print("Escolha o primeiro número: ");
         Scanner num1 = new Scanner(System.in);
-        int a = num1.nextInt();
+        double a = num1.nextInt();
         
         return a;
     }
     
     //pega o segundo número que vai operar
-    public Integer pegarNum2(){
+    public double pegarNum2(){
         System.out.print("Escolha o segundo número: ");
         Scanner num2 = new Scanner(System.in);
-        int b = num2.nextInt();
+        double b = num2.nextInt();
         
         return b;
     }
